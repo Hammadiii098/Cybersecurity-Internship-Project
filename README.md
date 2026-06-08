@@ -193,4 +193,157 @@ const logger = winston.createLogger({
 | Weak Auth        | Auth Module  | High         |
 | Misconfiguration | Server       | Medium       |
 
+
+# 🔐 Week 4 - Advanced Threat Detection & Web Security Enhancements
+
+## 🎯 Goal
+
+Implement advanced security measures, detect threats in real-time, and secure API endpoints against common attacks.
+
+### 🛡️ Intrusion Detection & Monitoring
+
+* Installed and configured **Fail2Ban** for real-time monitoring.
+* Configured automatic detection of suspicious login activities.
+* Implemented protection against repeated failed login attempts.
+
+### 🚦 API Security Hardening
+
+* Applied **Rate Limiting** using `express-rate-limit` to reduce brute-force attack risks.
+* Configured **CORS** policies to restrict unauthorized cross-origin requests.
+* Implemented **API Key Authentication** for securing API endpoints.
+
+### 🔒 Security Headers & CSP
+
+* Configured **Helmet.js** security middleware.
+* Implemented **Content Security Policy (CSP)** to mitigate script injection attacks.
+* Enabled **HTTP Strict Transport Security (HSTS)** for secure HTTPS communication.
+
+### ✅ Outcomes
+
+* Enhanced API protection mechanisms.
+* Reduced attack surface against brute-force and injection attempts.
+* Improved overall application security posture.
+
+---
+
+# 🕵️ Week 5 - Ethical Hacking & Exploiting Vulnerabilities
+
+## 🎯 Goal
+
+Perform security testing in a controlled environment, identify vulnerabilities, and implement security improvements.
+
+### 🔍 Reconnaissance & Enumeration
+
+* Utilized Kali Linux security tools for reconnaissance activities.
+* Performed service discovery and information gathering.
+* Identified application attack surfaces for further assessment.
+
+### 💉 SQL Injection Testing
+
+* Conducted SQL Injection assessments using SQLMap.
+* Evaluated application endpoints for SQLi vulnerabilities.
+* Applied secure coding practices using parameterized queries and prepared statements.
+
+### 🛡️ CSRF Protection
+
+* Implemented CSRF protection using `csurf` middleware.
+* Generated and validated CSRF tokens for sensitive requests.
+* Verified protection effectiveness through controlled testing.
+
+### ✅ Outcomes
+
+* Improved input validation and database security.
+* Strengthened protection against unauthorized request forgery.
+* Documented identified vulnerabilities and remediation measures.
+
+---
+
+# 🔎 Week 6 - Advanced Security Audits & Final Deployment Security
+
+## 🎯 Goal
+
+Conduct comprehensive security audits, verify compliance with best practices, and prepare the application for secure deployment.
+
+### 📊 Security Audits
+
+* Performed vulnerability scanning using:
+
+  * OWASP ZAP
+  * Nikto
+  * Lynis
+* Reviewed findings against OWASP Top 10 security risks.
+* Analyzed security recommendations and implemented improvements.
+
+### 🐳 Secure Deployment Practices
+
+* Executed dependency vulnerability scans using `npm audit`.
+* Applied security updates where applicable.
+* Followed Docker security best practices.
+* Performed container image vulnerability scanning.
+
+### 🚨 Final Penetration Testing
+
+* Conducted final security testing using industry-standard tools.
+* Verified implemented security controls.
+* Documented testing methodology, findings, and remediation actions.
+
+### ✅ Outcomes
+
+* Completed security assessment and hardening process.
+* Improved application resilience against common web attacks.
+* Prepared the application for secure deployment.
+
+---
+
+# 🛠️ Security Tools Used
+
+| Tool               | Purpose                          |
+| ------------------ | -------------------------------- |
+| Fail2Ban           | Intrusion Detection & Monitoring |
+| Express Rate Limit | Brute Force Protection           |
+| Helmet.js          | Security Headers                 |
+| CORS               | Cross-Origin Access Control      |
+| SQLMap             | SQL Injection Testing            |
+| Burp Suite         | Web Security Testing             |
+| OWASP ZAP          | Vulnerability Assessment         |
+| Nikto              | Web Server Security Audit        |
+| Lynis              | System Security Audit            |
+| Docker             | Containerized Deployment         |
+
+---
+
+# 📌 Key Security Features Implemented
+
+✅ Real-Time Intrusion Monitoring
+
+✅ Failed Login Attempt Detection
+
+✅ API Rate Limiting
+
+✅ CORS Security Controls
+
+✅ API Authentication
+
+✅ Content Security Policy (CSP)
+
+✅ Strict-Transport-Security (HSTS)
+
+✅ SQL Injection Mitigation
+
+✅ CSRF Protection
+
+✅ Vulnerability Scanning
+
+✅ Docker Security Auditing
+
+✅ OWASP Top 10 Security Review
+
+---
+
+## 🚀 Project Status
+
+**Security Hardening Completed Successfully**
+
+The application has undergone security assessment, vulnerability testing, and implementation of multiple defensive controls to improve confidentiality, integrity, and availability.
+
 ---
